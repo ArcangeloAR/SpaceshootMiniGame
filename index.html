@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spaceshoot</title>
+</head>
+<body>
+    <div id="container">
+        <div id="fundoGame">
+            <div id="inicio" onclick="start()">
+                <h1>Explore o Universo</h1>
+                <p>Combata a horda de naves inimigas e enfrente a invasão cósmica.</p>
+                <p>Utilize os direcionais (teclas ←↑↓→) para movimentar sua nave e a tecla Z para atirar.</p>
+                <p id="begin">Clique aqui para iniciar o jogo!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <audio src="../Spaceshoot/media/Sons/boss.wav" preload="auto" id="audioBoss"></audio>
+    <audio src="../Spaceshoot/media/Sons/explosion.mp3" preload="auto" id="audioExplosion"></audio>
+    <audio src="../Spaceshoot/media/Sons/gameplay.wav" preload="auto" id="audioGameplay"></audio>
+    <audio src="../Spaceshoot/media/Sons/lose.wav" preload="auto" id="audioLose"></audio>
+    <audio src="../Spaceshoot/media/Sons/shoot.mp3" preload="auto" id="audioShoot"></audio>
+    <audio src="../Spaceshoot/media/Sons/win.mp3" preload="auto" id="audioWin"></audio>
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

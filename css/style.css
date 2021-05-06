@@ -1,0 +1,545 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    color: purple;
+}
+
+body{
+    background-image: url(../media/imgs/inicial.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+#container{
+	width: 950px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+  padding: 10px;
+}
+
+#fundoGame {
+	width: 970px;
+	height: 850px;
+  position:fixed;
+	background-image:url(../media/imgs/fundao.png);
+	border: solid #FFF;
+  background-repeat: repeat;
+}
+
+#begin{
+  color: purple;
+  font-weight: bold;
+}
+
+
+#nave{
+  width: 119px;
+	height: 154px;
+	position: absolute;
+	left: 420px;
+	top: 650px;
+	background-image: url(../media/imgs/nave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}   
+
+#inimigo1{
+  width: 96px;
+	height: 94px;
+	position: absolute;
+	left: 250px;
+	top: 20px;
+	background-image: url(../media/imgs/inimigo1.png);
+}
+
+#inimigo2{
+  width: 227px;
+	height: 227px;
+	position: absolute;
+	left: 10px;
+	top: 120px;
+	background-image: url(../media/imgs/enemy2e3.png);
+}
+
+#inimigo3{
+  width: 227px;
+	height: 227px;
+	position: absolute;
+	left: 730px;
+	top: 120px;
+	background-image: url(../media/imgs/enemy2e3.png);
+}
+
+#boss{
+  width: 494px;
+	height: 426px;
+	position: absolute;
+	left: 235px;
+	top: 0px;
+	background-image: url(../media/imgs/boss.png);
+}
+
+#inicio {
+	width:350px;
+	height:250px;
+	background-color:#FFF;
+  color: black;
+ 	margin-left:auto;
+  margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+}
+
+#inicio p{
+    padding-top: 20px;
+}
+
+#disparo{
+    width: 41px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../media/imgs/shoot.png);
+}
+
+#disparoInimigo1{
+  width: 23px;
+  height: 76px;
+  position: absolute;
+  background-image: url(../media/imgs/blast.png);
+}
+
+#disparoInimigo2{
+  width: 34px;
+  height: 95px;
+  position: absolute;
+  background-image: url(../media/imgs/laser.png);
+}
+
+#disparoInimigo3{
+  width: 34px;
+  height: 95px;
+  position: absolute;
+  background-image: url(../media/imgs/laser.png);
+}
+
+#disparoBoss{
+  width: 166px;
+  height: 218px;
+  position: absolute;
+  background-image: url(../media/imgs/fireBoss.png);
+}
+
+#explosao1{
+  width: 73px;
+  height: 76px;
+  background-image: url(../media/imgs/explosao1.png);
+  position: absolute;
+}
+
+#explosao2{
+  width: 227px;
+	height: 227px;
+  background-image: url(../media/imgs/explosao2e3.png);
+  position: absolute;
+}
+
+#explosao3{
+  width: 227px;
+	height: 227px;
+  background-image: url(../media/imgs/explosao2e3.png);
+  position: absolute;
+}
+
+#explosao4{
+  width: 121px;
+	height: 131px;
+  background-image: url(../media/imgs/shieldFire.png);
+  position: absolute;
+}
+
+#explosao5{
+  width: 121px;
+	height: 131px;
+  background-image: url(../media/imgs/shieldFire.png);
+  position: absolute;
+}
+
+#explosao6{
+  width: 121px;
+	height: 131px;
+  background-image: url(../media/imgs/shieldFire.png);
+  position: absolute;
+}
+
+#explosao7{
+  width: 121px;
+	height: 131px;
+  background-image: url(../media/imgs/explosionFire.png);
+  position: absolute;
+}
+
+#explosao8{
+  width: 73px;
+  height: 76px;
+  background-image: url(../media/imgs/explosao1.png);
+  position: absolute;
+}
+
+#explosao9{
+  width: 121px;
+  height: 131px;
+  background-image: url(../media/imgs/explosionFire.png);
+  position: absolute;
+}
+
+
+#explosao10{
+  width: 658px;
+  height: 861px;
+  background-image: url(../media/imgs/purpleExplosion.png);
+  position: absolute;
+}
+
+.anima1{
+    background-image: url(../media/imgs/inimigo1.png);
+    animation: animaEnemy1 1.5s steps(13) infinite;
+        -webkit-animation: animaEnemy1 1.5s step(13) infinite;
+        -moz-animation: animaEnemy1 1.5s step(13) infinite;
+        -ms-animation: animaEnemy1 1.5s step(13) infinite;
+        -o-animation: animaEnemy1 1.5s step(13) infinite;
+}
+
+@keyframes animaEnemy1{
+    from {background-position: 0px;}
+    to {background-position: -1248px;}
+}
+
+@-webkit-keyframes animaEnemy1{
+    from {background-position: 0px;}
+    to {background-position: -1248px;}
+}
+
+@-moz-keyframes animaEnemy1{
+    from {background-position: 0px;}
+    to {background-position: -1248px;}
+}
+
+@-ms-keyframes animaEnemy1{
+    from {background-position: 0px;}
+    to {background-position: -1248px;}
+}
+
+@-o-keyframes animaEnemy1{
+    from{background-position: 0px;}
+    to {background-position: -1248px;}
+}
+
+.anima2{
+    background-image: url(../media/imgs/enemy2e3.png);
+    animation: animaEnemy2 2s linear infinite;
+        -webkit-animation: animaEnemy2 2s linear infinite;
+        -moz-animation: animaEnemy2 2s linear infinite;
+        -ms-animation: animaEnemy2 2s linear infinite;
+        -o-animation: animaEnemy2 2s linear infinite;
+}
+
+@keyframes animaEnemy2{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@-webkit-keyframes animaEnemy2{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes animaEnemy2{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes animaEnemy2{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes animaEnemy2{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.anima3{
+    background-image: url(../media/imgs/enemy2e3.png);
+    animation: animaEnemy3 2s linear infinite;
+        -webkit-animation: animaEnemy3 2s linear infinite;
+        -moz-animation: animaEnemy3 2s linear infinite;
+        -ms-animation: animaEnemy3 2s linear infinite;
+        -o-animation: animaEnemy3 2s linear infinite;
+}
+
+@keyframes animaEnemy3{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+@-webkit-keyframes animaEnemy3{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes animaEnemy3{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+@-ms-keyframes animaEnemy3{
+    from {
+    transform: rotate(360deg);
+    }
+    to {
+    transform: rotate(0deg);
+    }
+}
+
+@-o-keyframes animaEnemy3{
+    from {
+    transform: rotate(360deg);
+    }
+    to {
+    transform: rotate(0deg);
+    }
+}
+
+.anima4{
+  background-image: url(../media/imgs/portal.png);
+  animation: animaPortal 2s linear infinite;
+      -webkit-animation: animaPortal 2s linear infinite;
+      -moz-animation: animaPortal 2s linear infinite;
+      -ms-animation: animaPortal 2s linear infinite;
+      -o-animation: animaPortal 2s linear infinite;
+}
+
+@keyframes animaPortal{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@-webkit-keyframes animaPortal{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes animaPortal{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes animaPortal{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes animaPortal{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.movimenta{
+    background-image: url(../media/imgs/fundao.png);
+    animation: animaMovimento1 10s linear infinite;
+        -webkit-animation: animaMovimento1 10s linear infinite;
+        -moz-animation: animaMovimento1 10s linear infinite;
+        -ms-animation: animaMovimento1 10s linear infinite;
+        -o-animation: animaMovimento1 10s linear infinite;
+}
+
+@keyframes animaMovimento1{
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 1440px;
+    }
+}
+
+@-webkit-keyframes animaMovimento1{
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 1440px;
+    }
+}
+
+@-moz-keyframes animaMovimento1{
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 1440px;
+    }
+}
+
+@-ms-keyframes animaMovimento1{
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 1440px;
+    }
+}
+
+@-o-keyframes animaMovimento1{
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 1440px;
+    }
+}
+
+#placar {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 815px;
+}
+
+h2{
+  font-size: 25px;
+  color: #FFF
+}
+
+#vida {
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 850px;
+  top: 800px;
+}
+
+#escudo {
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 850px;
+  top: 760px;
+}
+
+#portal {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+	left: 235px;
+	top: 0px;
+  background-image: url(../media/imgs/portal.png);
+}
+
+
+#fim{
+  width: 350px;
+  height: 200px;
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+	text-align:center;
+}
+
+#fim p{
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  color: purple;
+  padding-top: 20px;
+}
+
+#congrats{
+  width: 450px;
+  height: 300px;
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+	text-align:center;
+}
+
+#congrats p{
+  padding-top: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  color: purple;
+  padding-top: 30px;
+}
